@@ -1,0 +1,239 @@
+
+a = 4
+
+a = 4
+a
+
+a
+4
+
+p= '0','1','2','3','4','5','6','7','8','priya'
+
+​
+p= '0','1','2','3','4','5','6','7','8','priya'
+p
+('0', '1', '2', '3', '4', '5', '6', '7', '8', 'priya')
+type(p)
+tuple
+p1 = [1,2,3,4,5,6,7,8]
+type(p1)
+list
+p1.append
+<function list.append(object, /)>
+p1.extend([8,8,8,8])
+p1.insert(1,"kush")
+p1
+[1, 'kush', 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 8]
+p1.insert(2,[0,0,0])
+p1
+[1, 'kush', [0, 0, 0], 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 8]
+p1.insert(3,[0,0,0])
+p1
+[1, 'kush', [0, 0, 0], [0, 0, 0], 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 8]
+p1.insert(3,[0,0,0])
+p1
+[1, 'kush', [0, 0, 0], [0, 0, 0], [0, 0, 0], 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 8]
+p1.insert(-0,[98])
+p1
+[[98],
+ 1,
+ 'kush',
+ [0, 0, 0],
+ [0, 0, 0],
+ [0, 0, 0],
+ 2,
+ 3,
+ 4,
+ 5,
+ 6,
+ 7,
+ 8,
+ 8,
+ 8,
+ 8,
+ 8]
+1.pop()
+
+p1.pop()
+8
+p1.pop()
+8
+p1.pop()
+8
+p1.pop()
+8
+p1.pop()
+8
+p1.pop()
+7
+p1.pop(2)
+'kush'
+p1.remove(4)
+p1
+[[98], 1, [0, 0, 0], [0, 0, 0], [0, 0, 0], 2, 3, 5, 6]
+p1[2].remove(0)
+p1
+[[98], 1, [0, 0], [0, 0, 0], [0, 0, 0], 2, 3, 5, 6]
+​
+​
+​
+​
+​
+p1
+[[98], 1, [0, 0], [0, 0, 0], [0, 0, 0], 2, 3, 5, 6]
+p2 = {1.,2,3,4}
+p2
+{1.0, 2, 3, 4}
+type(p2)
+set
+p3 = {}
+type(p3)
+dict
+p4 = {'k' : "priya"}
+p4
+{'k': 'priya'}
+p5 = {1234:"kush"}
+p5
+{1234: 'kush'}
+p5[1234]
+'kush'
+p6 = {'name' : "priya",'mail_id' :" priyakushwaha@gmail.com",'name' : "rajni",'hobby': "reading",'game':"indoor game"}
+p6['name']
+'rajni'
+p6
+{'name': 'rajni',
+ 'mail_id': ' priyakushwaha@gmail.com',
+ 'hobby': 'reading',
+ 'game': 'indoor game'}
+p6['bro']= ["gyan","prakash"]
+p6
+{'name': 'rajni',
+ 'mail_id': ' priyakushwaha@gmail.com',
+ 'hobby': 'reading',
+ 'game': 'indoor game',
+ 'bro': ['gyan', 'prakash']}
+p6.keys()
+dict_keys(['name', 'mail_id', 'hobby', 'game', 'bro'])
+list(p6.keys())
+['name', 'mail_id', 'hobby', 'game', 'bro']
+list(p6.items())
+[('name', 'rajni'),
+ ('mail_id', ' priyakushwaha@gmail.com'),
+ ('hobby', 'reading'),
+ ('game', 'indoor game'),
+ ('bro', ['gyan', 'prakash'])]
+list(p6.values())
+['rajni',
+ ' priyakushwaha@gmail.com',
+ 'reading',
+ 'indoor game',
+ ['gyan', 'prakash']]
+p6.pop('name')
+'rajni'
+p6.popitem()
+('bro', ['gyan', 'prakash'])
+p6
+{'mail_id': ' priyakushwaha@gmail.com',
+ 'hobby': 'reading',
+ 'game': 'indoor game'}
+marks = int (input ("enter marks"))
+if marks >= 80:
+    print ("you will be a part of A batch")
+elif marks >= 60 and marks < 80:
+    print("you will be a part of A1 batch")
+elif marks >= 40 and marks < 60:
+    print("you will be a part of A2 batch")
+else : 
+    print("you will be a part of A3")
+enter marks9
+you will be a part of A3
+k1 = [1,2,3,3,4,5,6,7,8,9,]
+k1
+[1, 2, 3, 3, 4, 5, 6, 7, 8, 9]
+k1[0] + 1
+2
+k1.append(k1[0] + 1)
+k1
+[1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 2]
+k1[2] + 1
+4
+k1.append(k1[2] + 1)
+k1
+[1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 2, 4]
+k2 = []
+for priya in k1:
+    print (priya + 1)
+    k2.append
+2
+3
+4
+4
+5
+6
+7
+8
+9
+10
+3
+5
+k1
+[1, 2, 3, 3, 4, 5, 6, 7, 8, 9, 2, 4]
+k2
+[]
+k1 = [1,2,3,3,4,6,6,7,8,9,"priya","kushwaha",3453,2.35,"rajni"]
+k2_num = []
+k3_str = []
+for i in k1 : 
+    if type (i) == int or type (i) == float:
+        k2_num.append(i)
+    else :
+        k3_str.append(i)
+    
+k2_num
+[1, 2, 3, 3, 4, 6, 6, 7, 8, 9, 3453, 2.35]
+k3_str
+['priya', 'kushwaha', 'rajni']
+3rd February
+a = 1 
+​
+while a <= 10 :
+    print (a)
+    
+    a = a+1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+p = 5
+​
+while p <= 100 :
+    print (p)
+    
+    p = p+5
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+   
